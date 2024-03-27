@@ -1,11 +1,8 @@
 import "./App.scss";
+import Main from "./pages/Main/Main.jsx";
 
 function App() {
-  return (
-    <>
-      <div className="bg-red-500 flex">Lorem ipsum</div>
-    </>
-  );
+  return <Main></Main>;
 }
 
 export default App;
