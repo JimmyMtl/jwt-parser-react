@@ -11,15 +11,21 @@ const Decoded = () => {
       <div className="flex flex-col w-full gap-2 h-full">
         <div className={style.decodedPart}>
           <span className={"text-gray-500"}>Payload</span>
-          <pre>{JSON.stringify(jwtPayload, null, 2)}</pre>
+          <pre className={"text-red-500"}>
+            {JSON.stringify(jwtPayload, null, 2)}
+          </pre>
         </div>
         <div className={style.decodedPart}>
           <span>Headers</span>
-          <pre>{JSON.stringify(jwtHeader, null, 2)}</pre>
+          <pre className={"text-violet-500"}>
+            {JSON.stringify(jwtHeader, null, 2)}
+          </pre>
         </div>
         <div className={style.decodedPart}>
           <span>Signature</span>
-          <pre>{JSON.stringify(jwtSignature, null, 2)}</pre>
+          <pre className={"text-blue-500"}>
+            {JSON.stringify(jwtSignature, null, 2)}
+          </pre>
         </div>
       </div>
     </div>

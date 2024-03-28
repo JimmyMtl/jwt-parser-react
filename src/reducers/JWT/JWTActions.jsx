@@ -33,7 +33,7 @@ const decodeBase64 = (base64, type) => {
       ),
     );
   } catch (ex) {
-    console.error("Cannot decode ", type, ex);
+    // console.error("Cannot decode ", type, ex);
     return {};
   }
 };
