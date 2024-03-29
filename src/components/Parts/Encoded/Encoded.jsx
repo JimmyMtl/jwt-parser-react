@@ -7,12 +7,10 @@ const Encoded = () => {
   const ref = useRef(null);
   return (
     <div className={"flex flex-col gap-2 md:w-1/2"}>
-      <h2>
-        Encoded -{" "}
-        <label className={"text-gray-500"} htmlFor="token">
-          token
-        </label>
-      </h2>
+      <h2>Encoded</h2>
+      <label className={"text-gray-500"} htmlFor="token">
+        token
+      </label>
       <div className="border border-gray-200 rounded  flex flex-col w-full gap-2 min-h-[40dvh] max-h-[75dvh] ">
         <JwtEdit
           ref={ref}

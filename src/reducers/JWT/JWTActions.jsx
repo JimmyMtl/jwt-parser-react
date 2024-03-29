@@ -19,12 +19,11 @@ export const decodeSignature = (token) => {
 };
 const decodeBase64 = (base64, type) => {
   try {
-    console.log("received base64", base64);
     const cleanedBase64 = base64.replace(/-/g, "+").replace(/_/g, "/");
     return JSON.parse(
       decodeURIComponent(
         window
-          .atob(base64)
+          .atob(cleanedBase64)
           .split("")
           .map(function (c) {
             return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);

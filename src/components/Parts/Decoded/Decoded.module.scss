@@ -3,5 +3,10 @@
   w-full
   flex flex-col gap-4
   rounded
+  overflow-hidden
   p-4;
+}
+
+.textPartName {
+  @apply text-gray-500;
 }
