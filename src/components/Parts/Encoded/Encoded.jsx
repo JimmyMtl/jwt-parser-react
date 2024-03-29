@@ -6,7 +6,7 @@ const Encoded = () => {
   const [isEditMode, setIsEditMode] = useState(false);
   const ref = useRef(null);
   return (
-    <div className={"flex flex-col gap-2 md:w-1/2"}>
+    <div className={"flex flex-col gap-2 md:w-2/3"}>
       <h2>Encoded</h2>
       <label className={"text-gray-500"} htmlFor="token">
         token
