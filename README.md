@@ -26,7 +26,7 @@ users to decode existing JWTs and interactively edit their headers and payloads.
 2. Start the application in development mode:
 
    ```bash
-   npm start
+   pnpm run dev
    ```
 
 2. Access the application in your browser at the following address: [http://localhost:5173](http://localhost:5173).
