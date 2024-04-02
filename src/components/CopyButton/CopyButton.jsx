@@ -1,5 +1,6 @@
 import React from "react"
 import { MdOutlineContentCopy } from "react-icons/md"
+import { toast } from "sonner"
 
 const CopyButton = ({ isEditMode, refBrother }) => {
     if (isEditMode) {
@@ -8,6 +9,7 @@ const CopyButton = ({ isEditMode, refBrother }) => {
     const copyToClipboard = () => {
         const text = refBrother.current?.innerText
         navigator.clipboard.writeText(text)
+        toast.success("Token copied to clipboard.")
     }
     return (
         <button
