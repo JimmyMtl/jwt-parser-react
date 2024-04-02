@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import { JWTContext } from "../../../../reducers/JWT/JWTContext.jsx"
 
-const JwtRender = ({ isEditMode, setIsEditMode, refBrother }) => {
+const JwtRender = ({ isEditMode, setIsEditMode }) => {
     const { token } = useContext(JWTContext)
     const [header, payload, signature] = token.split(".")
     const onClick = () => {

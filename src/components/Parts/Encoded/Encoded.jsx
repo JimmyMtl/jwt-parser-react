@@ -6,10 +6,6 @@ import CopyButton from "../../CopyButton/CopyButton.jsx"
 const Encoded = () => {
     const [isEditMode, setIsEditMode] = useState(false)
     const ref = useRef(null)
-    const copyToClipboard = () => {
-        const text = ref.current?.innerText
-        navigator.clipboard.writeText(text)
-    }
     return (
         <div className={"flex flex-col gap-2 md:w-2/3"}>
             <h2>Encoded</h2>
@@ -24,7 +20,6 @@ const Encoded = () => {
                     setIsEditMode={setIsEditMode}
                 />
                 <JwtRender
-                    refBrother={ref}
                     isEditMode={isEditMode}
                     setIsEditMode={setIsEditMode}
                 />
